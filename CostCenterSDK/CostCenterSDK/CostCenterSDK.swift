@@ -8,6 +8,8 @@
 import Foundation
 
 public struct CostCenterSDK {
+    public init() {}
+    
     public func initialize(){
         NSLog("CostCenterSDK initialize")
     }
