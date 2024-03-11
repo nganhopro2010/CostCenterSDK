@@ -14,7 +14,7 @@ class AdManager {
     static let instance = AdManager()
     
     func getAdvertisingIdentifier(completion: @escaping (String?,String?) -> Void) {
-        if let advertisingId = UserDefaults.standard.string(forKey: "advertisingId") {
+        if UserDefaults.standard.string(forKey: "advertisingId") != nil {
             return
         }
         if #available(iOS 14, *) {
