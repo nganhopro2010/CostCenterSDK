@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163BDF2280F129AD9B8B708E /* Pods_CostCenterSDK_CostCenterSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1F2A037A252FF8535305B8 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */; };
+		8FF54257A92DEF387102E39C /* Pods_CostCenterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AE60E87D48C35DA6337ED /* Pods_CostCenterSDK.framework */; };
+		9F052DE90CD040C4DE4EAD74 /* Pods_CostCenterSDK_CostCenterSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991DCE895217EF9A252EC92 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */; };
 		D40477262B9A1BA300FEB6ED /* CostCenterSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = D40477252B9A1BA300FEB6ED /* CostCenterSDK.docc */; };
 		D404772C2B9A1BA300FEB6ED /* CostCenterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40477212B9A1BA300FEB6ED /* CostCenterSDK.framework */; };
 		D40477322B9A1BA300FEB6ED /* CostCenterSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D40477242B9A1BA300FEB6ED /* CostCenterSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D404773E2B9A1C0300FEB6ED /* CostCenterSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404773D2B9A1C0300FEB6ED /* CostCenterSDK.swift */; };
 		D42CA83C2B9D6C8E00C92530 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CA83B2B9D6C8E00C92530 /* ApiManager.swift */; };
 		D42CA83E2B9D6C9600C92530 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CA83D2B9D6C9600C92530 /* AdsManager.swift */; };
-		DDE7581E58FAE2344D2C3F5A /* Pods_CostCenterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36194739FD395EFCB17F8266 /* Pods_CostCenterSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DBA43D355E5DE1B071D48BC /* Pods-CostCenterSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK.debug.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK/Pods-CostCenterSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		0FEC265F6566E3A0D9CEC68D /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		36194739FD395EFCB17F8266 /* Pods_CostCenterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CostCenterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56EAC5836633D9DAF15628F7 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		612FD41B3F2B4ADB3D4BA36B /* Pods-CostCenterSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK.release.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK/Pods-CostCenterSDK.release.xcconfig"; sourceTree = "<group>"; };
-		CD1F2A037A252FF8535305B8 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CostCenterSDK_CostCenterSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4AE60E87D48C35DA6337ED /* Pods_CostCenterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CostCenterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCEF9E5903B8E72158B6169 /* Pods-CostCenterSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK.debug.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK/Pods-CostCenterSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		C3DC9E39B0380A7D0E346FF8 /* Pods-CostCenterSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK.release.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK/Pods-CostCenterSDK.release.xcconfig"; sourceTree = "<group>"; };
+		CA67C2686241CD0AFC1C2F3A /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D40477212B9A1BA300FEB6ED /* CostCenterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CostCenterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40477242B9A1BA300FEB6ED /* CostCenterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostCenterSDK.h; sourceTree = "<group>"; };
 		D40477252B9A1BA300FEB6ED /* CostCenterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CostCenterSDK.docc; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		D404773D2B9A1C0300FEB6ED /* CostCenterSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCenterSDK.swift; sourceTree = "<group>"; };
 		D42CA83B2B9D6C8E00C92530 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		D42CA83D2B9D6C9600C92530 /* AdsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		E032CEE033A77AB189DF5343 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		E991DCE895217EF9A252EC92 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CostCenterSDK_CostCenterSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE7581E58FAE2344D2C3F5A /* Pods_CostCenterSDK.framework in Frameworks */,
+				8FF54257A92DEF387102E39C /* Pods_CostCenterSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,18 +57,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D404772C2B9A1BA300FEB6ED /* CostCenterSDK.framework in Frameworks */,
-				163BDF2280F129AD9B8B708E /* Pods_CostCenterSDK_CostCenterSDKTests.framework in Frameworks */,
+				9F052DE90CD040C4DE4EAD74 /* Pods_CostCenterSDK_CostCenterSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		735E9D3F25F44A78A53A3708 /* Frameworks */ = {
+		24D3FB2D7EF6C98B64848074 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36194739FD395EFCB17F8266 /* Pods_CostCenterSDK.framework */,
-				CD1F2A037A252FF8535305B8 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */,
+				6D4AE60E87D48C35DA6337ED /* Pods_CostCenterSDK.framework */,
+				E991DCE895217EF9A252EC92 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,10 +76,10 @@
 		7E97AD38D3090CAA77BBB402 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0DBA43D355E5DE1B071D48BC /* Pods-CostCenterSDK.debug.xcconfig */,
-				612FD41B3F2B4ADB3D4BA36B /* Pods-CostCenterSDK.release.xcconfig */,
-				0FEC265F6566E3A0D9CEC68D /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */,
-				56EAC5836633D9DAF15628F7 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */,
+				AFCEF9E5903B8E72158B6169 /* Pods-CostCenterSDK.debug.xcconfig */,
+				C3DC9E39B0380A7D0E346FF8 /* Pods-CostCenterSDK.release.xcconfig */,
+				CA67C2686241CD0AFC1C2F3A /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */,
+				E032CEE033A77AB189DF5343 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 				D40477232B9A1BA300FEB6ED /* CostCenterSDK */,
 				D40477222B9A1BA300FEB6ED /* Products */,
 				7E97AD38D3090CAA77BBB402 /* Pods */,
-				735E9D3F25F44A78A53A3708 /* Frameworks */,
+				24D3FB2D7EF6C98B64848074 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,7 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D40477352B9A1BA300FEB6ED /* Build configuration list for PBXNativeTarget "CostCenterSDK" */;
 			buildPhases = (
-				606079A6FF01BBAA9100273B /* [CP] Check Pods Manifest.lock */,
+				71397A171102805B933C266D /* [CP] Check Pods Manifest.lock */,
 				D404771C2B9A1BA300FEB6ED /* Headers */,
 				D404771D2B9A1BA300FEB6ED /* Sources */,
 				D404771E2B9A1BA300FEB6ED /* Frameworks */,
@@ -152,11 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D40477382B9A1BA300FEB6ED /* Build configuration list for PBXNativeTarget "CostCenterSDKTests" */;
 			buildPhases = (
-				F99E3E6C8E2BFD90FDB2BEDB /* [CP] Check Pods Manifest.lock */,
+				E1278800B316541B37C4A93C /* [CP] Check Pods Manifest.lock */,
 				D40477272B9A1BA300FEB6ED /* Sources */,
 				D40477282B9A1BA300FEB6ED /* Frameworks */,
 				D40477292B9A1BA300FEB6ED /* Resources */,
-				440016BFF57BAB818F9CE887 /* [CP] Embed Pods Frameworks */,
+				748F5B063A979A4542847603 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,24 +223,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		440016BFF57BAB818F9CE887 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		606079A6FF01BBAA9100273B /* [CP] Check Pods Manifest.lock */ = {
+		71397A171102805B933C266D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,7 +245,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F99E3E6C8E2BFD90FDB2BEDB /* [CP] Check Pods Manifest.lock */ = {
+		748F5B063A979A4542847603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1278800B316541B37C4A93C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,7 +443,7 @@
 		};
 		D40477362B9A1BA300FEB6ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DBA43D355E5DE1B071D48BC /* Pods-CostCenterSDK.debug.xcconfig */;
+			baseConfigurationReference = AFCEF9E5903B8E72158B6169 /* Pods-CostCenterSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -474,7 +474,7 @@
 		};
 		D40477372B9A1BA300FEB6ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 612FD41B3F2B4ADB3D4BA36B /* Pods-CostCenterSDK.release.xcconfig */;
+			baseConfigurationReference = C3DC9E39B0380A7D0E346FF8 /* Pods-CostCenterSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -505,7 +505,7 @@
 		};
 		D40477392B9A1BA300FEB6ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FEC265F6566E3A0D9CEC68D /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */;
+			baseConfigurationReference = CA67C2686241CD0AFC1C2F3A /* Pods-CostCenterSDK-CostCenterSDKTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,7 +522,7 @@
 		};
 		D404773A2B9A1BA300FEB6ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56EAC5836633D9DAF15628F7 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */;
+			baseConfigurationReference = E032CEE033A77AB189DF5343 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

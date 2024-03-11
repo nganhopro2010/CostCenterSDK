@@ -17,7 +17,7 @@ PODS:
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
-  - FirebaseCore (~> 10.22)
+  - FirebaseCore
 
 SPEC REPOS:
   trunk:
@@ -32,6 +32,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 44e181664468afdb9f991ae734364ba336d1d17d
+PODFILE CHECKSUM: 4ed715370a830eda01a188ea8eda05cf77aa8193
 
 COCOAPODS: 1.15.2

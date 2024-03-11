@@ -20,7 +20,7 @@ public class CostCenterSDK {
         let bundleIdentifier = Bundle(for: CostCenterSDK.self).bundleIdentifier
         let platform = "iOS"
         let vendorId = UIDevice.current.identifierForVendor?.uuidString
-        if isFirstTimeOpenApp() {
+        if !isFirstTimeOpenApp() {
             var parameters: [URLQueryItem] = [
                 URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
                 URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
