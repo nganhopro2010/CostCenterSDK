@@ -18,7 +18,7 @@ PODS:
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.9)
+  - Alamofire
   - FirebaseCore (~> 10.22)
 
 SPEC REPOS:
@@ -36,6 +36,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: e533aebb810d6a56b6c9e2c28785998e06e92abe
+PODFILE CHECKSUM: 55fa7993bd35a6477f0947e765c564bd07894911
 
 COCOAPODS: 1.15.2
