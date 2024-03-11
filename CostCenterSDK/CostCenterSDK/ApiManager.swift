@@ -14,7 +14,7 @@ class ApiManager {
 
     func callAppOpen(params: [String: Any]) {
         NSLog("callAppOpen parameters = \(params)")
-        Session.default.request(urlString, method: .get, parameters: params).responseDecodable(of: ResponseModel.self) { response in
+        Alamofire.AF.request(urlString, method: .get, parameters: params).responseDecodable(of: ResponseModel.self) { response in
             switch response.result {
             case .success(let value):
                 NSLog("Success response Model: \(value)")
