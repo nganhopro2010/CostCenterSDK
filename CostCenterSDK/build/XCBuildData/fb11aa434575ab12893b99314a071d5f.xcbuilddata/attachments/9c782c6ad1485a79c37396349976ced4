@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_CostCenterSDKVersionString[];
+ extern const double Pods_CostCenterSDKVersionNumber;
+
+ const unsigned char Pods_CostCenterSDKVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_CostCenterSDK  PROJECT:Pods-1" "\n";
+ const double Pods_CostCenterSDKVersionNumber __attribute__ ((used)) = (double)1.;

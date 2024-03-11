@@ -1,0 +1,32 @@
+Target dependency graph (12 targets)
+Target 'Pods-CostCenterSDK-CostCenterSDKTests' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCore' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+Target 'Pods-CostCenterSDK' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCore' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+Target 'FirebaseCore' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCore-FirebaseCore_Privacy' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCoreInternal' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+Target 'FirebaseCoreInternal' in project 'Pods'
+➜ Explicit dependency on target 'FirebaseCoreInternal-FirebaseCoreInternal_Privacy' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+Target 'GoogleUtilities' in project 'Pods'
+➜ Explicit dependency on target 'GoogleUtilities-GoogleUtilities_Privacy' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+Target 'PromisesObjC' in project 'Pods'
+➜ Explicit dependency on target 'PromisesObjC-FBLPromises_Privacy' in project 'Pods'
+Target 'PromisesObjC-FBLPromises_Privacy' in project 'Pods' (no dependencies)
+Target 'GoogleUtilities-GoogleUtilities_Privacy' in project 'Pods' (no dependencies)
+Target 'FirebaseCoreInternal-FirebaseCoreInternal_Privacy' in project 'Pods' (no dependencies)
+Target 'FirebaseCore-FirebaseCore_Privacy' in project 'Pods' (no dependencies)
+Target 'Alamofire' in project 'Pods'
+➜ Explicit dependency on target 'Alamofire-Alamofire' in project 'Pods'
+Target 'Alamofire-Alamofire' in project 'Pods' (no dependencies)
