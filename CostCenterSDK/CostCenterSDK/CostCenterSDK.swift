@@ -10,8 +10,6 @@ import FirebaseCore
 import AppTrackingTransparency
 import AdSupport
 
-
-
 public class CostCenterSDK {
     public static let instance = CostCenterSDK();
     private init() {}
@@ -22,23 +20,29 @@ public class CostCenterSDK {
         let bundleIdentifier = Bundle(for: CostCenterSDK.self).bundleIdentifier
         let platform = "iOS"
         let vendorId = UIDevice.current.identifierForVendor?.uuidString
-        var parameters: [String: Any] = [
-            "firebase_app_instance_id": firebaseAppInstanceID ?? "",
-            "bundle_id": bundleIdentifier ?? "",
-            "platform": platform,
-            "vendor_id": vendorId ?? "",
-            "attribution_token": "",
-            "advertising_id": ""
-        ]
         if isFirstTimeOpenApp() {
+            var parameters: [URLQueryItem] = [
+                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
+                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
+                URLQueryItem(name: "platform", value: platform),
+                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
+                URLQueryItem(name: "attribution_token", value: ""),
+                URLQueryItem(name: "advertising_id", value: ""),
+            ]
             ApiManager.instance.callAppOpen(params: parameters)
             saveFirstTimeOpenApp()
         }
         
         AdManager.instance.getAdvertisingIdentifier { advertisingId, attributeToken in
             // Parameters
-            parameters["attribution_token"] = attributeToken ?? ""
-            parameters["advertising_id"] = advertisingId ?? ""
+            var parameters: [URLQueryItem] = [
+                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
+                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
+                URLQueryItem(name: "platform", value: platform),
+                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
+                URLQueryItem(name: "attribution_token", value: attributeToken ?? ""),
+                URLQueryItem(name: "advertising_id", value: advertisingId ?? ""),
+            ]
             ApiManager.instance.callAppOpen(params: parameters)
             
         }

@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (5.9.0)
   - FirebaseCore (10.22.0):
     - FirebaseCoreInternal (~> 10.0)
     - GoogleUtilities/Environment (~> 7.12)
@@ -18,24 +17,21 @@ PODS:
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
-  - Alamofire
   - FirebaseCore (~> 10.22)
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - FirebaseCore
     - FirebaseCoreInternal
     - GoogleUtilities
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
   FirebaseCore: 0326ec9b05fbed8f8716cddbf0e36894a13837f7
   FirebaseCoreInternal: bca337352024b18424a61e478460547d46c4c753
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 55fa7993bd35a6477f0947e765c564bd07894911
+PODFILE CHECKSUM: 44e181664468afdb9f991ae734364ba336d1d17d
 
 COCOAPODS: 1.15.2
