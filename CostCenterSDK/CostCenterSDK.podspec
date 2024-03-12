@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
   spec.name          = 'CostCenterSDK'
-  spec.version       = '0.5'
+  spec.version       = '0.6'
   spec.homepage      = 'https://github.com/nganhopro2010/CostCenterSDK'
   spec.authors      = { 'Ho Van Ngan' => 'nganhopro2010@gmail.com' }
-  spec.summary       = 'It is a cost center name xcframework.'
+  spec.summary       = 'It is a cost center name xcframework example'
   spec.source        = { :git => 'https://github.com/nganhopro2010/CostCenterSDK.git', :tag => spec.version }
   spec.dependency 'FirebaseCore'
   spec.module_name   = 'CostCenterSDK'
