@@ -13,14 +13,15 @@ import AdServices
 
 public class CostCenterSDK {
     public static let instance = CostCenterSDK()
-    
+    private let KEY_FIRST_TIME_OPEN_APP = "KEY_FIRST_TIME_OPEN_APP"
     var isShowingLog =  false
     
     private init() {}
     
-    public func initialize(){
+    public func initialize(app: AnyClass, logger: Bool = false){
+        isShowingLog = logger
         let firebaseAppInstanceID = FirebaseApp.app()?.options.googleAppID
-        let bundleIdentifier = Bundle(for: CostCenterSDK.self).bundleIdentifier
+        let bundleIdentifier = Bundle(for: app.self).bundleIdentifier
         let platform = "iOS"
         let vendorId = UIDevice.current.identifierForVendor?.uuidString
         var attrToken : String? = nil
@@ -32,49 +33,27 @@ public class CostCenterSDK {
             }
         }
         if !isFirstTimeOpenApp() {
-            var parameters: [URLQueryItem] = [
-                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
-                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
-                URLQueryItem(name: "platform", value: platform),
-                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
-                URLQueryItem(name: "attribution_token", value: attrToken ?? ""),
-                URLQueryItem(name: "advertising_id", value: ""),
-            ]
-            ApiManager.instance.callAppOpen(params: parameters)
+            ApiManager.instance.callAppOpen(consent: false, vendorId: vendorId, bundleIdentifier: bundleIdentifier, firebaseAppInstanceID: firebaseAppInstanceID, advertisingId: nil, platform: platform, attrToken: attrToken)
             saveFirstTimeOpenApp()
         }
-        
-        AdManager.instance.getAdvertisingIdentifier { advertisingId in
-            // Parameters
-            var parameters: [URLQueryItem] = [
-                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
-                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
-                URLQueryItem(name: "platform", value: platform),
-                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
-                URLQueryItem(name: "attribution_token", value: attrToken ?? ""),
-                URLQueryItem(name: "advertising_id", value: advertisingId ?? ""),
-                URLQueryItem(name: "consent", value: "true"),
-            ]
-            ApiManager.instance.callAppOpen(params: parameters)
-            
-        }
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1){
+            AdManager.instance.getAdvertisingIdentifier { advertisingId in
+                ApiManager.instance.callAppOpen(consent: true, vendorId: vendorId, bundleIdentifier: bundleIdentifier, firebaseAppInstanceID: firebaseAppInstanceID, advertisingId: advertisingId, platform: platform, attrToken: attrToken)
+                
+            }}
         CostCenterLogger(message: "CostCenterSDK initialized")
         
     }
     
     private func saveFirstTimeOpenApp() {
         let defaults = UserDefaults.standard
-        defaults.set(true, forKey: "firstTimeOpenApp")
+        defaults.set(true, forKey: KEY_FIRST_TIME_OPEN_APP)
         defaults.synchronize()
     }
     
     private func isFirstTimeOpenApp() -> Bool {
         let defaults = UserDefaults.standard
-        return defaults.bool(forKey: "firstTimeOpenApp")
-    }
-    
-    public func showLogger(show: Bool){
-        isShowingLog = show
+        return defaults.bool(forKey: KEY_FIRST_TIME_OPEN_APP)
     }
     
 }
