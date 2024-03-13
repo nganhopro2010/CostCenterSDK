@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = 'CostCenterSDK'
-  spec.version       = '1.0'
+  spec.version       = '1.1'
   spec.homepage      = 'https://github.com/nganhopro2010/CostCenterSDK'
   spec.authors      = { 'Ho Van Ngan' => 'nganhopro2010@gmail.com' }
   spec.summary       = 'It is a cost center name xcframework example'
