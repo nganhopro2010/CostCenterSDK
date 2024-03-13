@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CostCenterSDK.swift"
 
 
 //! Project version number for CostCenterSDK.
