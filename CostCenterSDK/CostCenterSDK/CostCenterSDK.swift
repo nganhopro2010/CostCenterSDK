@@ -11,14 +11,12 @@ import AppTrackingTransparency
 import AdSupport
 import AdServices
 
-public class CostCenterSDK {
-    public static let instance = CostCenterSDK()
+public class CostCenterSDK : NSObject{
+    @objc public static let instance = CostCenterSDK()
     private let KEY_FIRST_TIME_OPEN_APP = "KEY_FIRST_TIME_OPEN_APP"
     var isShowingLog =  false
     
-    private init() {}
-    
-    public func initialize(app: AnyClass, logger: Bool = false){
+    @objc public func initialize(app: AnyClass, logger: Bool = false){
         isShowingLog = logger
         let firebaseAppInstanceID = FirebaseApp.app()?.options.googleAppID
         let bundleIdentifier = Bundle(for: app.self).bundleIdentifier
