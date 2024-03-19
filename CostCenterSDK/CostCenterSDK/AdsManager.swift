@@ -10,10 +10,12 @@ import AppTrackingTransparency
 import AdSupport
 
 class AdManager {
+    
     static let instance = AdManager()
+    private let KEY_ADVERTISING_ID = "KEY_ADVERTISING_ID"
     
     func getAdvertisingIdentifier(completion: @escaping (String?) -> Void) {
-        if UserDefaults.standard.string(forKey: "advertisingId") != nil {
+        if UserDefaults.standard.string(forKey: KEY_ADVERTISING_ID) != nil {
             return
         }
         if #available(iOS 14, *) {
@@ -21,7 +23,7 @@ class AdManager {
                 switch status {
                 case .authorized:
                     let advertisingId = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-                    UserDefaults.standard.set(advertisingId, forKey: "advertisingId")
+                    UserDefaults.standard.set(advertisingId, forKey: self.KEY_ADVERTISING_ID)
                     completion(advertisingId)
                     break
                 case .denied:

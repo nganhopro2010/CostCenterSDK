@@ -15,6 +15,7 @@
 		D404773E2B9A1C0300FEB6ED /* CostCenterSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404773D2B9A1C0300FEB6ED /* CostCenterSDK.swift */; };
 		D42CA83C2B9D6C8E00C92530 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CA83B2B9D6C8E00C92530 /* ApiManager.swift */; };
 		D42CA83E2B9D6C9600C92530 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CA83D2B9D6C9600C92530 /* AdsManager.swift */; };
+		D4BF64C42BA9CEB800337724 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BF64C32BA9CEB800337724 /* AppInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		D404773D2B9A1C0300FEB6ED /* CostCenterSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostCenterSDK.swift; sourceTree = "<group>"; };
 		D42CA83B2B9D6C8E00C92530 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		D42CA83D2B9D6C9600C92530 /* AdsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		D4BF64C32BA9CEB800337724 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		E032CEE033A77AB189DF5343 /* Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; path = "Target Support Files/Pods-CostCenterSDK-CostCenterSDKTests/Pods-CostCenterSDK-CostCenterSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		E991DCE895217EF9A252EC92 /* Pods_CostCenterSDK_CostCenterSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CostCenterSDK_CostCenterSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				D40477242B9A1BA300FEB6ED /* CostCenterSDK.h */,
 				D40477252B9A1BA300FEB6ED /* CostCenterSDK.docc */,
 				D404773D2B9A1C0300FEB6ED /* CostCenterSDK.swift */,
+				D4BF64C32BA9CEB800337724 /* AppInfo.swift */,
 			);
 			path = CostCenterSDK;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42CA83C2B9D6C8E00C92530 /* ApiManager.swift in Sources */,
+				D4BF64C42BA9CEB800337724 /* AppInfo.swift in Sources */,
 				D42CA83E2B9D6C9600C92530 /* AdsManager.swift in Sources */,
 				D404773E2B9A1C0300FEB6ED /* CostCenterSDK.swift in Sources */,
 				D40477262B9A1BA300FEB6ED /* CostCenterSDK.docc in Sources */,

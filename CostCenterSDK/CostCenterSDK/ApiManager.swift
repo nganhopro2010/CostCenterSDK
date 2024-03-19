@@ -9,29 +9,18 @@ import Foundation
 
 class ApiManager {
     static let instance = ApiManager()
-    func callAppOpen(consent: Bool = false,vendorId: String?, bundleIdentifier: String? = "", firebaseAppInstanceID: String? = "", advertisingId: String? = "", platform: String? = "", attrToken: String? = "") {
-        var parameters: [URLQueryItem] = []
-        if !consent {
-            parameters = [
-                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
-                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
-                URLQueryItem(name: "platform", value: platform),
-                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
-                URLQueryItem(name: "attribution_token", value: attrToken ?? ""),
-                URLQueryItem(name: "advertising_id", value: advertisingId ?? ""),
-            ]
-        } else {
-            parameters = [
-                URLQueryItem(name: "firebase_app_instance_id", value: firebaseAppInstanceID ?? ""),
-                URLQueryItem(name: "bundle_id", value: bundleIdentifier ?? ""),
-                URLQueryItem(name: "platform", value: platform),
-                URLQueryItem(name: "vendor_id", value:  vendorId ?? ""),
-                URLQueryItem(name: "attribution_token", value: attrToken ?? ""),
-                URLQueryItem(name: "advertising_id", value: advertisingId ?? ""),
-                URLQueryItem(name: "consent", value: "true"),
-            ]
-        }
-        CostCenterLogger(message: "callAppOpen parameters = \(parameters)")
+    func callAppOpen(appInfo: AppInfo) {
+        let parameters: [URLQueryItem] = [
+            URLQueryItem(name: "firebase_app_instance_id", value: appInfo.firebaseAppInstanceId ?? ""),
+            URLQueryItem(name: "bundle_id", value: appInfo.bundleId ?? ""),
+            URLQueryItem(name: "platform", value: appInfo.platform),
+            URLQueryItem(name: "vendor_id", value:  appInfo.vendorId ?? ""),
+            URLQueryItem(name: "attribution_token", value: appInfo.attributionToken ?? ""),
+            URLQueryItem(name: "advertising_id", value: appInfo.advertisingId ?? ""),
+            URLQueryItem(name: "consent", value: "\(appInfo.consent)"),
+        ]
+        
+        CostCenterLogger(message: "callAppOpen with parameters = \(parameters)")
         var components = URLComponents(string: "https://attribution.costcenter.net/appopen")!
         components.queryItems = parameters
         guard let url = components.url else {
@@ -52,6 +41,10 @@ class ApiManager {
             if !(200...299).contains(httpResponse.statusCode) {
                 CostCenterLogger(message: "HTTP Response Error: \(httpResponse.statusCode)")
                 return
+            } else {
+                if(!appInfo.consent){
+                    CostCenterSDK.instance.saveFirstTimeOpenApp()
+                }
             }
             CostCenterLogger(message: "statusCode = \(httpResponse.statusCode)")
         }
